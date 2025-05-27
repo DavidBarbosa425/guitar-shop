@@ -1,7 +1,7 @@
-import { Guitar } from './../model/guitar';
+import { Guitar } from '../models/guitar';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Result } from '../../base/models/result';
+import { Result } from '../../base/result';
 
 @Injectable({
   providedIn: 'root'

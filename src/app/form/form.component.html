@@ -1,1 +1,20 @@
-<p>form works!</p>
+
+<div class="container">
+    <form [formGroup]="form" (ngSubmit)="create()">
+        <h1>Cadastro de Guitarras</h1>
+        <label>Name</label>
+        <input type="text" pInputText formControlName="name" />
+        <button
+            pButton
+            pRipple
+            type="button"
+            icon="pi pi-plus"
+            (click)="create()"
+            text
+            rounded
+            severity="secondary"
+            >
+            New
+        </button>
+    </form>
+</div>

@@ -1,5 +1,16 @@
+<button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-plus"
+    (click)="create()"
+    text
+    rounded
+    severity="secondary"
+    >New
+</button>
+
 <div class="card">
-    <p-toast />
     <p-table [value]="guitars" dataKey="id" editMode="row" [tableStyle]="{'min-width': '50rem'}">
         <ng-template #header>
             <tr>
